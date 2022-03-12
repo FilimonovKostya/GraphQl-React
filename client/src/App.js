@@ -16,7 +16,6 @@ function App() {
         }
     })
 
-    console.log('one', oneUser)
     const [newUser] = useMutation(CREATE_USER)
 
     const addUser = (e) => {
@@ -28,7 +27,6 @@ function App() {
                 }
             }
         }).then(({data}) => {
-            console.log(data)
             setUserName('')
             setAge('')
         })

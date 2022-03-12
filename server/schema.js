@@ -15,9 +15,9 @@ const schema = buildSchema(`
     }
     
         input UserInput {
-            id: ID
+        id: ID
         userName: String!
-        age: Int!
+        age: String!
         posts: [PostInput] 
     }
     
